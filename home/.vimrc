@@ -19,7 +19,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Airline instead of powerline, simple yet great
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'majutsushi/tagbar'
 
@@ -54,7 +54,6 @@ set laststatus=2                              " without this the status line is 
 set ttimeoutlen=50                            " to prevent delay when leaving insert mode
 let g:airline#extensions#tabline#enabled = 1  " it is disabled by default, so
 let g:airline_powerline_fonts=1               " using patched Inconsolata
-let g:airline_theme='powerlineish'            " favourite theme
 let g:rehash256=1
 
 " Colorscheme

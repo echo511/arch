@@ -1,0 +1,7 @@
+[user]
+	name = Nikolas Tsiongas
+	email = ntsiongas@gmail.com
+[core]
+	editor = vim
+[push]
+	default = simple
