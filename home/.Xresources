@@ -1,4 +1,3 @@
-terminal colours
 *foreground:#CCCCCC
 *background:#1B1D1E
 !black darkgray
@@ -25,6 +24,11 @@ terminal colours
 !gray white
 *color7:    #CCCCCC
 *color15:   #F8F8F2
+*VT100.colorBDMode:     true
+*VT100.colorBD:         red
+*VT100.colorULMode:     true
+*VT100.colorUL:         cyan
+*VT100.veryBoldColors: 6
 xterm*faceName: Source Code Pro
 xterm*faceNameDoublesize: Droid Sans Fallback
 xterm*faceSize: 10
