@@ -42,6 +42,8 @@ Plugin 'nvie/vim-flake8'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 
+Plugin 'ledger/vim-ledger'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -92,3 +94,8 @@ nnoremap <C-H> <C-W><C-H>
 let g:UltiSnipsExpandTrigger="<c-e>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" Ledger
+let g:ledger_maxwidth=120
+let g:ledger_fillstring='_'
+let g:ledger_detailed_first=1
