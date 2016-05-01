@@ -182,7 +182,7 @@ client.urgent #aa0000 #990000 #ffffff
 
 # Startup programs
 exec --no-startup-id nm-applet
-exec --no-startup-id "setxkbmap -model pc105 -layout cz,gr -option grp:alt_shift_toggle"
+exec_always --no-startup-id "setxkbmap -model pc105 -layout cz"
 exec --no-startup-id compton
 exec --no-startup-id owncloud
 exec --no-startup-id pidgin
@@ -190,6 +190,11 @@ exec --no-startup-id transmission-gtk
 exec --no-startup-id clipit
 exec_always feh --bg-fill ~/wallpaper.jpg
 # exec --no-startup-id i3-msg 'workspace 1; exec thunar'
+
+# Lang changer
+bindsym $mod+Control+1 exec "setxkbmap -model pc105 -layout cz"
+bindsym $mod+Control+2 exec "setxkbmap -model pc105 -layout us"
+bindsym $mod+Control+3 exec "setxkbmap -model pc105 -layout gr"
 
 # Custom KeyBinds
 bindsym Control+$mod+l exec sh ~/.config/i3/i3lock.sh
@@ -204,6 +209,8 @@ bindsym $mod+Control+Shift+p exec shutdown 0
 bindsym $mod+q exec thunar
 bindsym $mod+y exec firefox --new-window
 bindsym $mod+x exec thunderbird
+
+bindsym --release button2 kill
 
 bindsym $mod+Control+t  exec vlc http://78.46.73.91:9111/
 bindsym $mod+Control+g  exec vlc http://eco.onestreaming.com:8286/
