@@ -15,6 +15,9 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+" Mouse on
+set mouse=a
+
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
