@@ -1,0 +1,4 @@
+#!/bin/sh
+
+out="$(timew | sed -e 1b -e '$!d')"
+echo $out
