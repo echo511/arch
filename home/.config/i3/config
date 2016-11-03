@@ -205,6 +205,7 @@ bindsym $mod+Control+Shift+e exec i3-msg exit
 bindsym $mod+q exec thunar
 bindsym $mod+y exec chromium --new-window
 bindsym $mod+x exec claws-mail
+bindsym $mod+c exec liferea
 
 bindsym --release button2 kill
 
